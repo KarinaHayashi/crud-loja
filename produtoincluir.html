@@ -1,0 +1,47 @@
+
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <TITLE>Adicionar</TITLE>
+</head>
+<body>
+<?php
+include("./function.php");
+validaSessao();
+?>
+<style>
+		b{
+			text-shadow: 2px 2px 4px black;
+			 }
+		h1{
+			 text-shadow: 2px 2px 4px black;
+			 text-align: center;
+			 }
+		h2{
+			text-align: center;
+
+		}	 
+		body {
+			background-image: url('pesssoas.jpg');
+			border: 1px solid rgb(105, 108, 255);
+            border-radius: 5px;
+            color: rgb(105, 108, 255);
+            text-align: center;
+            padding: 5px;
+			}
+	</style>
+<h1 style="font-family:Lucida Console; color:white; font-size:40px; text-align:center">Inserção de Produtos<br></h1>
+<form method="post" enctype="multipart/form-data" action="produtoincluir.php">
+<b><span style='font-family:Lucida Console;text-align: center;color: white; font-size: 15 px'>Nome do Produto: <input type="text" size="20" name="nome_produto" maxlength="120"><br><br></b>
+<b><span style='font-family:Lucida Console;text-align: center;color: white; font-size: 15px'>Preço do Produto:<input type="text" size="10" name="preco"><br><br></b>
+
+ <br/>
+ <h2> <br><p><span style='font-family:Lucida Console;color: white; font-size: 15px;'><button type="submit">Incluir</button></p>
+ <br><p><span style='font-family:Lucida Console;color: white; font-size: 15px;'><a href="produtoconsulta.html">Consultar</a></p>
+ <br><span style='font-family:Lucida Console;color: white; font-size: 15px;'><a href="index.html">Retornar para o menu</a>
+ </form> </h2>
+</form>
+
+</body>
+</html>
